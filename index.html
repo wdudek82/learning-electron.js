@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/css/style.css">
+
+    <title>Learning Electron</title>
+</head>
+<body>
+
+    <div class="input-group">
+        <span class="input-group-addon">Acronym</span>
+        <input id="acronym_input" type="text" class="form-control" placeholder="Search" onclick="updateResultsList()">
+        <div class="input-group-btn"></div>
+    </div>
+
+    <br>
+
+    <p id="dupa">aa</p>
+    <p id="version">aa</p>
+
+    <ol id="results">
+        Empty
+    </ol>
+
+    <!-- JS -->
+    <script>
+        require("./app/js/render.js");
+    </script>
+
+</body>
+</html>
